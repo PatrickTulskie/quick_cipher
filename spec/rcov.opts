@@ -1,0 +1,1 @@
+--exclude "spec/*,gems/*,lib/authenticated_test_helper.rb,lib/guid.rb"

@@ -1,0 +1,7 @@
+--colour
+--loadby mtime
+--reverse
+--backtrace
+--debugger
+--require spec/formatters/compact_progressbar_formatter.rb
+--format Spec::Runner::Formatter::CompactProgressBarFormatter
