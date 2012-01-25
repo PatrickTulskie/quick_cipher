@@ -1,15 +1,15 @@
 class QuickCipher
   module Decipher
   
-    def decipher(input_text)
-      character_shift = determine_cipher(input_text)
+    def decipher(input_text, known_cipher = nil)
+      character_shift = known_cipher || determine_cipher(input_text)
       input_text.each_char.map do |char|
         ALPHABET.include?(char.downcase) ? ALPHABET[ALPHABET.index(char.downcase) - character_shift] : char
       end.join('')
     end
   
-    def decipher_file(input_file)
-      decipher(File.open(input_file).read)
+    def decipher_file(input_file, known_cipher = nil)
+      decipher(File.open(input_file).read, known_cipher)
     end
   
     private

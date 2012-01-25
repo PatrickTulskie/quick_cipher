@@ -19,4 +19,16 @@ Note: QuickCipher needs a sizable chunk of text in order to decipher it automati
 
 ## More examples
 
-TODO
+Enciphering Basic Text
+
+	>> QuickCipher.encipher("the quick brown fox jumped over the big lazy dog.", 15)
+	=> "iwt fjxrz qgdlc udm yjbets dktg iwt qxv apon sdv."
+	
+Deciphering Basic Text with a Known Cipher
+
+	>> QuickCipher.decipher("iwt fjxrz qgdlc udm yjbets dktg iwt qxv apon sdv.", 15)
+	=> "the quick brown fox jumped over the big lazy dog."
+	
+## Other Notes
+
+I am by no means a cryptographic or cipher expert.  I just did this in response to a challenge I saw on reddit.  I might further expand on it as I toy with some of the challenges in "The Ghost in the Wires."
