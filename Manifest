@@ -1,0 +1,14 @@
+Rakefile
+lib/quick_cipher.rb
+lib/quick_cipher/decipher.rb
+lib/quick_cipher/encipher.rb
+readme.mdown
+spec/decipher_spec.rb
+spec/encipher_spec.rb
+spec/formatters/compact_progressbar_formatter.rb
+spec/rcov.opts
+spec/sample_data/deciphered.txt
+spec/sample_data/enciphered.txt
+spec/spec.opts
+spec/spec_helper.rb
+Manifest
